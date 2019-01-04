@@ -1,0 +1,51 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Home Library" Height="428.4" Width="800">
+    <Grid Margin="0,0,-0.4,8.2">
+        <GroupBox Header="Add new book" HorizontalAlignment="Left" Height="112" Margin="10,10,0,0" VerticalAlignment="Top" Width="374">
+            <Grid Margin="-24,0,148,-0.4">
+                <Label Content="Author" HorizontalAlignment="Left" Margin="60,2,0,0" VerticalAlignment="Top"/>
+                <Label Content="Title" HorizontalAlignment="Left" Margin="75,19,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.088,0.99"/>
+                <Label Content="Year/Publisher" HorizontalAlignment="Left" Margin="22,37,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.088,0.99"/>
+                <Label Content="Language" HorizontalAlignment="Left" Margin="44,54,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.088,0.99"/>
+                <TextBox HorizontalAlignment="Left" Height="16" Margin="107,5,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                <TextBox HorizontalAlignment="Left" Height="16" Margin="107,24,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                <TextBox HorizontalAlignment="Left" Height="16" Margin="107,43,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                <TextBox HorizontalAlignment="Left" Height="16" Margin="107,62,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                <Button Content="Add" HorizontalAlignment="Right" Margin="0,40,-132.4,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.015,0.474"/>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Search book" HorizontalAlignment="Left" Height="77" Margin="10,138,0,0" VerticalAlignment="Top" Width="374">
+            <Grid Margin="-24,0,-2.4,-0.6" Height="55" VerticalAlignment="Top">
+                <Label Content="Search by: " HorizontalAlignment="Left" Margin="31,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.021,0.333"/>
+                <RadioButton Content="Author" HorizontalAlignment="Left" Margin="113,6,0,0" VerticalAlignment="Top"/>
+                <RadioButton Content="Title" HorizontalAlignment="Left" Margin="192,6,0,0" VerticalAlignment="Top"/>
+                <RadioButton Content="Language" HorizontalAlignment="Left" Margin="272,6,0,0" VerticalAlignment="Top"/>
+                <TextBox HorizontalAlignment="Left" Height="16" Margin="31,31,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="212"/>
+                <Button Content="Search" HorizontalAlignment="Left" Margin="303,30,0,0" VerticalAlignment="Top" Width="75"/>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Delete book" HorizontalAlignment="Left" Height="100" Margin="10,231,0,0" VerticalAlignment="Top" Width="374">
+            <Grid Margin="0,0,6.8,-0.4">
+                <Label Content="Search by: " HorizontalAlignment="Left" Margin="31,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.021,0.333"/>
+                <RadioButton Content="Author" HorizontalAlignment="Left" Margin="113,6,0,0" VerticalAlignment="Top"/>
+                <RadioButton Content="Title" HorizontalAlignment="Left" Margin="192,6,0,0" VerticalAlignment="Top"/>
+                <RadioButton Content="Language" HorizontalAlignment="Left" Margin="272,6,0,0" VerticalAlignment="Top"/>
+                <TextBox HorizontalAlignment="Left" Height="16" Margin="31,31,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="212"/>
+                <Button Content="Search" HorizontalAlignment="Left" Margin="272,28,0,0" VerticalAlignment="Top" Width="75"/>
+                <Button Content="Delete selected" HorizontalAlignment="Left" Margin="155,52,0,0" VerticalAlignment="Top" Width="88"/>
+            </Grid>
+        </GroupBox>
+        <DataGrid HorizontalAlignment="Left" Height="321" Margin="424,10,0,0" VerticalAlignment="Top" Width="344"/>
+        <Button HorizontalAlignment="Right" Margin="0,356,25.6,0" VerticalAlignment="Top" Width="344">Show</Button>
+
+
+    </Grid>
+</Window>
